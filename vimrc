@@ -35,6 +35,7 @@ nnoremap <leader><space> :noh<cr>
 " Navigate brackets with <tab> instead of %
 " nnoremap <tab> %
 " vnoremap <tab> %
+nnoremap <leader>s :Ack
 
 " Long lines and wrapping
 set textwidth=79
