@@ -7,3 +7,5 @@ set autoindent
 set hls
 set ic
 
+nnoremap <leader>n :NERDTreeToggle<cr>
+
