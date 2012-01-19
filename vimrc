@@ -55,6 +55,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 nnoremap <leader>w <C-w>v<C-w>l
+" Close buffer without closing window.
+nmap <C-w>d <Plug>Kwbd
 
 nnoremap <leader>n :NERDTreeToggle<cr>
+
 
