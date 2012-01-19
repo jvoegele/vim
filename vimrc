@@ -13,7 +13,7 @@ set relativenumber
 set wildmenu
 set wildmode=list:longest
 set scrolloff=3
-set cursorline
+"set cursorline
 set ruler
 set laststatus=2
 set list listchars=tab:»\ ,trail:·  " Highlights tabs and trailing spaces
@@ -39,7 +39,7 @@ nnoremap <leader>s :Ack
 
 " Long lines and wrapping
 set textwidth=79
-set colorcolumn=80
+"set colorcolumn=80
 set formatoptions=tcqrn1 " See :help fo-table for details
 
 " Make j and k work by screen line instead of file line.
