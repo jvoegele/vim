@@ -28,8 +28,8 @@ set gdefault
 set incsearch
 set showmatch
 " Use normal regular expressions.
-nnoremap / /\v
-vnoremap / /\v
+"nnoremap / /\v
+"vnoremap / /\v
 " Clear highlighted search results.
 nnoremap <leader><space> :noh<cr>
 " Navigate brackets with <tab> instead of %
@@ -60,4 +60,5 @@ nmap <C-w>d <Plug>Kwbd
 
 nnoremap <leader>n :NERDTreeToggle<cr>
 
+let loaded_ruby_ftplugin = 1
 
