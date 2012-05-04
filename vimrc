@@ -1,13 +1,35 @@
 set nocompatible
+
+" ===== Vundle setup
 filetype off    " required for Vundle
 
 set rtp+=~/.vim/vundle/
 call vundle#rc()
 
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'mileszs/ack.vim'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "snipmate-snippets"
+Bundle 'garbas/vim-snipmate'
+Bundle 'vim-scripts/YankRing.vim'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rvm'
+Bundle 'tpope/vim-bundler'
+Bundle 'tpope/vim-rake'
+Bundle 'tpope/vim-rails'
+Bundle 'slimv.vim'
+Bundle 'Conque-Shell'
+Bundle 'taq/vim-rspec'
+Bundle 'tpope/vim-cucumber'
+
+filetype plugin indent on
+" ===== End Vundle setup
 
 syntax on
-filetype plugin indent on
-
 set encoding=utf-8
 set hidden
 set autoindent
