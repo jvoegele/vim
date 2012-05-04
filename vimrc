@@ -38,7 +38,7 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <leader>s :Ack 
 
 " Long lines and wrapping
-set textwidth=79
+"set textwidth=79
 "set colorcolumn=80
 set formatoptions=tcqrn1 " See :help fo-table for details
 
@@ -61,4 +61,9 @@ nmap <C-w>d <Plug>Kwbd
 nnoremap <leader>n :NERDTreeToggle<cr>
 
 let loaded_ruby_ftplugin = 1
+
+" Make parens and braces work like TextMate
+"inoremap {<cr> {<cr>}<c-o>O<tab>
+"inoremap [<cr> [<cr>]<c-o>O<tab>
+"inoremap (<cr> (<cr>)<c-o>O<tab>
 
