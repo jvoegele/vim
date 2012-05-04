@@ -1,5 +1,12 @@
+set nocompatible
+filetype off    " required for Vundle
+
+set rtp+=~/.vim/vundle/
+call vundle#rc()
+
+
 syntax on
-filetype plugin on
+filetype plugin indent on
 
 set encoding=utf-8
 set hidden
