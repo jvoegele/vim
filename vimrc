@@ -6,14 +6,18 @@ filetype off    " required for Vundle
 set rtp+=~/.vim/vundle/
 call vundle#rc()
 
+Bundle 'xmledit'
+Bundle 'bufexplorer.zip'
+Bundle 'fholgado/minibufexpl.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'mileszs/ack.vim'
+Bundle 'rking/ag.vim'
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
-Bundle "snipmate-snippets"
+Bundle "honza/snipmate-snippets"
 Bundle 'garbas/vim-snipmate'
-Bundle 'vim-scripts/YankRing.vim'
+"Bundle 'vim-scripts/YankRing.vim'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
@@ -21,10 +25,28 @@ Bundle 'tpope/vim-rvm'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-rails'
+Bundle 'unimpaired.vim'
 Bundle 'slimv.vim'
-Bundle 'Conque-Shell'
 Bundle 'taq/vim-rspec'
 Bundle 'tpope/vim-cucumber'
+Bundle 'rson/vim-conque'
+Bundle 'Css-Pretty'
+Bundle 'HTML-AutoCloseTag'
+Bundle 'scala.vim'
+Bundle 'VimClojure'
+Bundle 'tslime.vim'
+Bundle 'scratch'
+"Bundle 'UltiSnips'
+Bundle 'textobj-user'
+Bundle 'textobj-rubyblock'
+Bundle 'camelcasemotion'
+Bundle 'unimpaired.vim'
+Bundle 'commentary.vim'
+Bundle 'abolish.vim'
+Bundle 'SQLUtilities'
+Bundle 'Align'
+Bundle 'argtextobj.vim'
+Bundle 'html5.vim'
 
 filetype plugin indent on
 " ===== End Vundle setup
@@ -64,7 +86,7 @@ nnoremap <leader><space> :noh<cr>
 " Navigate brackets with <tab> instead of %
 " nnoremap <tab> %
 " vnoremap <tab> %
-nnoremap <leader>s :Ack 
+nnoremap <leader>s :Ag 
 
 " Long lines and wrapping
 "set textwidth=79
@@ -72,8 +94,8 @@ nnoremap <leader>s :Ack
 set formatoptions=tcqrn1 " See :help fo-table for details
 
 " Make j and k work by screen line instead of file line.
-nnoremap j gj
-nnoremap k gk
+"nnoremap j gj
+"nnoremap k gk
 
 " Strip all trailing whitespace.
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
@@ -95,4 +117,10 @@ let loaded_ruby_ftplugin = 1
 "inoremap {<cr> {<cr>}<c-o>O<tab>
 "inoremap [<cr> [<cr>]<c-o>O<tab>
 "inoremap (<cr> (<cr>)<c-o>O<tab>
+
+autocmd Filetype c,cpp set et tabstop=4 shiftwidth=4 softtabstop=4
+
+if has('gui_running')
+  colorscheme wombat
+end
 
