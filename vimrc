@@ -44,7 +44,7 @@ Bundle 'unimpaired.vim'
 Bundle 'commentary.vim'
 Bundle 'abolish.vim'
 Bundle 'SQLUtilities'
-Bundle 'Align'
+"Bundle 'Align'
 Bundle 'argtextobj.vim'
 Bundle 'html5.vim'
 
@@ -109,6 +109,10 @@ nnoremap <leader>w <C-w>v<C-w>l
 " Close buffer without closing window.
 nmap <C-w>d <Plug>Kwbd
 
+" Convenient access to BufExplorer
+nnoremap <leader>b :BufExplorer<cr>
+
+
 nnoremap <leader>n :NERDTreeToggle<cr>
 
 let loaded_ruby_ftplugin = 1
@@ -122,5 +126,6 @@ autocmd Filetype c,cpp set et tabstop=4 shiftwidth=4 softtabstop=4
 
 if has('gui_running')
   colorscheme wombat
+  set guifont=Inconsolata:h14
 end
 
